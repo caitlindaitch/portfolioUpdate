@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: url(images/codingHero.png);
+  background-size: cover; }
+
+h1 {
+  line-height: 2em; }
+
+.last-name {
+  text-align: center;
+  font-size: 150px;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
+
+.first-name {
+  text-align: center;
+  font-size: 75px;
+  font-family: "Pacifico", cursive;
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
+
+nav {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  text-align: right;
+  text-transform: uppercase;
+  font-family: arial;
+  display: inline-block;
+  background: none;
+  box-shadow: none;
+  line-height: 20px; }
+  nav .nav-item {
+    padding-bottom: 20px;
+    margin-bottom: 10px; }
+  nav a:link,
+  nav a:active,
+  nav a:visited {
+    background-color: #fff;
+    color: #c9c9c9;
+    font-family: arial;
+    font-size: 16px;
+    text-decoration: none;
+    background: linear-gradient(to right, #fff 50%, #39f1c8 50%);
+    background-size: 200% 100%;
+    padding: 10px 25px 10px 10px;
+    margin-top: 10px;
+    transition: 1s ease;
+    background-position: left bottom; }
+  nav a:hover {
+    background-color: #39f1c8;
+    border-color: #39f1c8;
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+    background-position: right bottom; }
+
+.thumbnail {
+  width: 100%; }
+
+.row .col {
+  padding: 0;
+  margin-bottom: -7px; }
+
+/*# sourceMappingURL=style.css.map */
