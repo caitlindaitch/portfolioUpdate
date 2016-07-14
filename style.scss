@@ -1,11 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
 
 $cursive-title: "Pacifico", cursive;
 $sans-serif-title: "Fjalla One", sans-serif;
-$body-font: arial;
+$body-font: "Merriweather", serif;
 $light-neutral: #c9c9c9;
 $accent-color: #39f1c8;
+
+strong {
+  font-weight: 700;
+}
 
 // Hero
 
@@ -17,6 +22,7 @@ header {
   text-align: center;
   background: url(images/codingHero.png);
   background-size: cover;
+  align-items: center;
 }
 
 @mixin textShadow($color){
@@ -39,6 +45,16 @@ header {
 
 h1 {
   line-height: 2em;
+}
+
+.description {
+  background-color: transparentize(#000, .8);
+  padding: 20px;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-family: $body-font;
+  font-size: 20px;
 }
 
 .last-name {
@@ -65,7 +81,6 @@ nav {
   right: 0;
   top: 20px;
   text-align: right;
-  text-transform: uppercase;
   font-family: $body-font;
   display: inline-block;
   background: none;
@@ -103,13 +118,26 @@ nav {
   }
 }
 
+a {
+  &:link, &:visited, &:active {
+    color: white;
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: $accent-color;
+    transition: 1s;
+  }
+}
+
+// Portfolio Section
+
 .thumbnail {
   width: 100%;
-  // -webkit-filter: grayscale(100%);
-  //   filter: grayscale(100%);
 }
 
 .row {
+  margin-bottom: 0;
 
   .col {
     padding: 0;

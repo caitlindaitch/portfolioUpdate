@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
+strong {
+  font-weight: 700; }
+
 header {
   height: 100vh;
   display: flex;
@@ -7,10 +11,20 @@ header {
   justify-content: center;
   text-align: center;
   background: url(images/codingHero.png);
-  background-size: cover; }
+  background-size: cover;
+  align-items: center; }
 
 h1 {
   line-height: 2em; }
+
+.description {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-family: "Merriweather", serif;
+  font-size: 20px; }
 
 .last-name {
   text-align: center;
@@ -36,8 +50,7 @@ nav {
   right: 0;
   top: 20px;
   text-align: right;
-  text-transform: uppercase;
-  font-family: arial;
+  font-family: "Merriweather", serif;
   display: inline-block;
   background: none;
   box-shadow: none;
@@ -50,7 +63,7 @@ nav {
   nav a:visited {
     background-color: #fff;
     color: #c9c9c9;
-    font-family: arial;
+    font-family: "Merriweather", serif;
     font-size: 16px;
     text-decoration: none;
     background: linear-gradient(to right, #fff 50%, #39f1c8 50%);
@@ -67,11 +80,20 @@ nav {
     transition: 1s;
     background-position: right bottom; }
 
+a:link, a:visited, a:active {
+  color: white;
+  font-weight: bold; }
+a:hover {
+  color: #39f1c8;
+  transition: 1s; }
+
 .thumbnail {
   width: 100%; }
 
-.row .col {
-  padding: 0;
-  margin-bottom: -7px; }
+.row {
+  margin-bottom: 0; }
+  .row .col {
+    padding: 0;
+    margin-bottom: -7px; }
 
 /*# sourceMappingURL=style.css.map */
